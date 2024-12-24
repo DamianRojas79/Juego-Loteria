@@ -10,6 +10,11 @@ def create_app():
         SECRET_KEY='dev'
     )
 
+    # Registrar Blueprint
+    from . import loteria
+    app.register_blueprint(loteria.bp)
+    
+
     @app.route('/')
     def index():
         return 'Hola mundo'
