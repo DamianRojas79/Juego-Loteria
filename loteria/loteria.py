@@ -1,8 +1,6 @@
 from flask import Blueprint
 
-#bp=Blueprint('loteria',__name__, url_prefix='/loteria')
-bp=Blueprint('loteria',__name__)
-
+bp=Blueprint('loteria',__name__, url_prefix='/loteria') 
 
 @bp.route('/list')
 def index():
